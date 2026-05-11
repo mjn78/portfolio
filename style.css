@@ -91,6 +91,25 @@ footer {
 .skills_inner {
     padding: 20px;
 }
+.skills_list{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    list-style: none;
+    gap: 30px;
+    
+}
+.skills_list li{
+    background-color: #FFE9F5;
+    align-items: right;
+    display: flex;
+    justify-content: left;
+    padding: 20px;
+    border-radius: 5px;
+}
+.check-icon {
+    width: 20px;
+    height: 20px;
+}
 .tools_img {
     height: 320px;
     width: auto;
@@ -121,7 +140,10 @@ footer {
 
 @media (max-width: 768px) {
     h2 {
-        font-size: 40px;
+        font-size: 35px;
+    }
+    h3 {
+        font-size: 22px;
     }
     .hamburger {
         display: block;
