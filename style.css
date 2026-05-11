@@ -14,13 +14,36 @@ h2 {
 h3 {
     font-size: 40px;
 }
+p {
+    line-height: 1.5;
+}
+
 .text_1 {
     max-width: 420px;
+    text-align: justify;
 }
 .text_2 {
     color:#484C89;
 }
-
+.hero-container {
+    width: 550px;
+    padding-bottom: 80px;
+}
+.work-title {
+    font-size: 26px;
+    font-weight: 500;
+    color: #484C89;
+    font-family: "Space Grotesk", sans-serif;
+    margin-top: -35px;
+}
+#typing-text::after {
+  content: "|";
+  margin-left: 4px;
+  animation: blink 0.8s infinite;
+}
+.work-description {
+    font-size: 18px;
+}
 header{
     position: sticky;
     top: 0;
@@ -82,6 +105,13 @@ footer {
 }
 #about {
     align-items: center;
+}
+.about-me_mob {
+    display: none;
+}
+.about_img {
+    height: 360px;
+    width: auto;
 }
 #hero, #skills, #projects, .skills_inner_a{
     display: flex;
@@ -147,14 +177,74 @@ footer {
     transform: scale(1.05);
 }
 
+/* contact form */
+.contact-form_container {
+    width: 400px;
+}
+.contact-form {
+    background: #FFE9F5;
+    padding: 20px;
+    gap: 10px;
+}
+label {
+  display: block;
+  font-weight: 500;
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+input,
+textarea {
+  width: 340px;
+  padding: 8px;
+  margin-bottom: 20px;
+  border: 1px solid #EDE9E4;
+}
+textarea {
+    height: 160px;
+    margin-bottom: 0;
+}
+
+/* buttons */
+.send-btn, .project-btn, .resume-btn {
+    display: inline-flex;
+    border-radius: 5px;
+    padding: 10px;
+    text-decoration: none;
+    justify-content: center;
+    margin-top: 20px;
+}
+.send-btn, .project-btn {
+    background:#F4ADC1;
+    color:#fff;
+    border: 2px solid #F4ADC1;
+}
+.send-btn {
+    width: auto;
+}
+.resume-btn, .project-btn {
+    width: 100px;
+}
+.resume-btn {
+    background: none;;
+    border: 2px solid #F4ADC1;
+    color: #F4ADC1;
+}
+
 /* Mobile */
 
 @media (max-width: 768px) {
     h2 {
-        font-size: 35px;
+        font-size: 30px;
     }
     h3 {
         font-size: 22px;
+    }
+    .text_1 {
+        max-width: 330px;
+    }
+    p {
+        font-size: 16px !important;
+        font-weight: 500;
     }
     .hamburger {
         display: block;
@@ -177,6 +267,23 @@ footer {
     .section {
         max-width: 768px;
     }
+    .hero-container {
+        width: 400px;
+    }
+    .work-title {
+    font-size: 20px;
+    margin-top: -10px;
+    }
+    .about-me_mob {
+        display:flex;
+        justify-content: center;
+    }
+    .about-me_web {
+        display: none;
+    }
+    .about_img {
+        height: 230px;
+    }
     #about, #contact {
         flex-direction: column;
     }
@@ -196,5 +303,10 @@ footer {
     .tools_img {
         height: 120px;
     }
+}
 
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
 }
