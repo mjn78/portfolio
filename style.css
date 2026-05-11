@@ -147,11 +147,15 @@ footer {
     .nav-links.active {
     display: flex;
     }
+    .section {
+        max-width: 768px;
+    }
     #about, #contact {
         flex-direction: column;
     }
     .project-card-container {
         grid-template-columns: repeat(1, 1fr);
     }
+
 
 }
