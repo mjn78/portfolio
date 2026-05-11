@@ -26,7 +26,7 @@ header{
     top: 0;
     z-index: 10;
     background: #FFFBF5;
-    border-bottom: 1px solid #484C89;
+    border-bottom: 1px solid #EDE9E4;
     height: 60px;
 }
 .hamburger {
@@ -37,7 +37,7 @@ footer {
     z-index: 10;
     display: flex;
     justify-content: center;
-    border-top: 1px solid #484C89;
+    border-top: 1px solid #EDE9E4;
 }
 .navbar {
     display: flex;
@@ -83,32 +83,43 @@ footer {
 #about {
     align-items: center;
 }
-#hero, #skills, #projects, .skills_inner {
+#hero, #skills, #projects, .skills_inner_a{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.skills_inner {
+#skills {
+    padding-bottom: 80px;
+}
+.skills_inner_a {
     padding: 20px;
 }
-.skills_list{
+.skills_inner_b {
+    padding-top: 30px;
+}
+.skills_inner_c {
+    display: flex;
+    flex-direction: column;
+}
+.skills_list {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     list-style: none;
     gap: 30px;
-    
 }
 .skills_list li{
     background-color: #FFE9F5;
-    align-items: right;
+    align-items: center;
     display: flex;
     justify-content: left;
     padding: 20px;
     border-radius: 5px;
+    font-size: 20px;
 }
-.check-icon {
-    width: 20px;
-    height: 20px;
+.skills_list i {
+    font-size: 24px;
+    padding: 10px;
+    color: #F4ADC1;
 }
 .tools_img {
     height: 320px;
@@ -152,20 +163,14 @@ footer {
     position: absolute;
     top: 80px;
     right: 0;
-
     width: 100%;
-
     background: white;
-
     flex-direction: column;
     align-items: center;
     gap: 1.5rem;
-
     padding: 2rem 0;
-
     display: none;
     }
-
     .nav-links.active {
     display: flex;
     }
@@ -175,9 +180,21 @@ footer {
     #about, #contact {
         flex-direction: column;
     }
+    .skills_list {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 10px;
+        padding-left: 0;
+    }
+    .skills_list li{
+        max-width: 300px;
+        font-size: 16px;
+    }
+    
     .project-card-container {
         grid-template-columns: repeat(1, 1fr);
     }
-
+    .tools_img {
+        height: 120px;
+    }
 
 }
