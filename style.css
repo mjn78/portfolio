@@ -97,7 +97,6 @@ footer {
     min-height: 570px;
     padding: 20px 0 30px 0;
 }
-
 #about, #contact {
     display: flex;
     flex-direction: row;
@@ -165,16 +164,42 @@ footer {
     margin: 0 auto;
 }
 .project-card {
-    background-color: #FFE9F5;
-    padding: 20px;
+    background-color: #FFFBF5;
+    padding: 0 0 20px 0;
     transition: transform 0.3s ease;
-    width: 300px;
-    height: 350px;
+    width: 100%;
+    max-width: 300px;
+    min-height: 350px;
     /* border: 1px solid #484C89; */
     border-radius: 5px;
+    box-shadow: 0 8px 20px -10px rgba(0,0,0,0.15);
+    border: 1px solid #EDE9E4;
 }
 .project-card:hover {
     transform: scale(1.05);
+}
+.project-card_texts {
+    padding:10px 20px 20px 20px;
+}
+.project-card_texts h4{
+    color:#484C89;
+}
+.project-card img{
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px 5px 0 0;
+}
+.project-tag {
+    display: inline-block;
+    font-size: 12px;
+    padding: 4px 8px;
+    border-radius: 10px;
+    background: #F0F1F2;
+    color:#484C89;
+}
+.project-tools {
+    font-size: 14px;
+    color:#484C89;
 }
 
 /* contact form */
@@ -228,6 +253,10 @@ textarea {
     background: none;;
     border: 2px solid #F4ADC1;
     color: #F4ADC1;
+}
+.view-project_btn {
+    margin-top: 10px;
+    color:#484C89;
 }
 
 /* Mobile */
