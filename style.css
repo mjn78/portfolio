@@ -25,6 +25,9 @@ p {
 .text_2 {
     color:#484C89;
 }
+.text_3 {
+    max-width: 540px;
+}
 .hero-container {
     width: 550px;
     padding-bottom: 80px;
@@ -74,6 +77,9 @@ footer {
     margin-left: 20px;
     color: #304254;
 }
+.nav-mobile {
+    display: none;
+}
 .nav-links {
     display: flex;
     gap: 2rem;
@@ -97,6 +103,9 @@ footer {
     min-height: 570px;
     padding: 20px 0 30px 0;
 }
+#hero, #skills {
+    background:#F0F1F2;
+}
 #about, #contact {
     display: flex;
     flex-direction: row;
@@ -117,7 +126,7 @@ footer {
     flex-direction: column;
     align-items: center;
 }
-#skills {
+#skills, #projects {
     padding-bottom: 80px;
 }
 .skills_inner_a {
@@ -210,6 +219,13 @@ footer {
     background: #FFE9F5;
     padding: 20px;
     gap: 10px;
+    border-radius: 5px;
+    box-shadow: 0 8px 20px -10px rgba(0,0,0,0.15);
+    border: #EDE9E4;
+}
+.contact-form h3{
+    font-size: 28px;
+    margin-top: 15px;
 }
 label {
   display: block;
@@ -268,7 +284,7 @@ textarea {
     h3 {
         font-size: 22px;
     }
-    .text_1 {
+    .text_1, .text_3 {
         max-width: 330px;
     }
     p {
@@ -276,22 +292,22 @@ textarea {
         font-weight: 500;
     }
     .hamburger {
-        display: block;
+        display: none;
     }
     .nav-links {
-    position: absolute;
-    top: 80px;
-    right: 0;
-    width: 100%;
-    background: white;
-    flex-direction: column;
-    align-items: center;
-    gap: 1.5rem;
-    padding: 2rem 0;
-    display: none;
+        display: none;
     }
-    .nav-links.active {
-    display: flex;
+    .nav-mobile {
+        display: flex;
+    }
+    .nav-mobile li{
+        list-style: none;
+        padding-right: 20px;
+        font-size: 24px;
+    }
+    .nav-mobile a{
+        text-decoration: none;
+        color:#484C89;
     }
     .section {
         max-width: 768px;
@@ -316,6 +332,7 @@ textarea {
     }
     #about, #contact {
         flex-direction: column;
+        align-items: center;
     }
     .skills_list {
         grid-template-columns: repeat(1, 1fr);
