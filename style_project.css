@@ -1,0 +1,9 @@
+.nav_back {
+    padding: 20px 0;
+}
+.nav_back a {
+    text-decoration: none;
+    margin: 15px;
+    color: #484C89;
+    font-weight: 550;
+}
