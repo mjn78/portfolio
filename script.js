@@ -1,16 +1,3 @@
-const hamburger =
-    document.querySelector(".hamburger");
-
-  const navLinks =
-    document.querySelector(".nav-links");
-
-  hamburger.addEventListener(
-    "click",
-    () => {
-      navLinks.classList.toggle("active");
-    }
-  );
-
 //   hero section
 const text = "Web Developer & Website Support";
 const typingText = document.getElementById("typing-text");
@@ -27,3 +14,22 @@ function typeEffect() {
 }
 
 typeEffect();
+
+// TEST
+const swiper = new Swiper('.swiper', {
+    pagination: {
+        el: '.swiper-pagination',
+    },
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+});
+// gallery
+new Swiper('.swiper', {
+    loop: true,
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+});

@@ -1,3 +1,9 @@
+body {
+    min-height: 100vh;
+}
+a {
+    text-decoration: none;
+}
 .nav_back {
     padding: 20px 0;
 }
@@ -85,7 +91,55 @@
 .tech-used_container p {
     user-select: none;
 }
+.project-page_btn {
+    display: flex;
+    gap: 15px;
+}
+.view-screenshot_btn {
+    background:#F4ADC1;
+}
+.view-screenshot_btn a {
+    color:#fff;
+}
+.view-source-code_btn a{
+    color: #F4ADC1;
+}
+.view-source-code_btn {
+    background: none;
+}
+.view-source-code_btn, .view-screenshot_btn {
+    border: 2px solid #F4ADC1;
+    padding: 15px 20px;
+    font-size: 18px;
+    cursor: pointer;
+}
 
+/* Gallery */
+.gallery-project_container ul{
+    display: flex;
+    gap: 15px;
+}
+.gallery-project_card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #ddd;
+    width: 100%;
+    max-width: 300px;
+    list-style: none;
+}
+.gallery-project_card img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* TEST ----------------------------------------- */
+/* .swiper {
+    width: 600px;
+    height: 300px;
+} */
 
 /* Tablet */
 @media (max-width: 1024px) {
@@ -106,11 +160,20 @@
         width: 400px;
         height: 100%;
     }
+
     .features {
         grid-template-columns: repeat(5, 1fr);
     }
     .features-card p{
         text-align: center;
+    }
+    .project-page_btn {
+        flex-direction: column;
+        align-items: center;
+    }
+    .project-page_btn button{
+        width: 380px;
+        border-radius: 5px;
     }
     .tech-used_container {
         padding: 10px;

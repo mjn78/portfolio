@@ -7,6 +7,8 @@
         <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css"/>
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="style_project.css">
     </head>
@@ -20,9 +22,9 @@
             <div class="project-page_info">
                 <h3>Project Name</h3>
                 <p>A short project project overview</p>
-                <div>
-                    <button>View Screenshot</button>
-                    <button>View Source Code</button>
+                <div class="project-page_btn">
+                    <button class="view-screenshot_btn"><a href="#project-gallery">View Screenshot</a></button></a>
+                    <button class="view-source-code_btn"><a href="#" target="_blank" rel="noopener noreferrer">View Source Code</a></button>
                 </div>
             </div>
             <div class="project-page_preview">
@@ -61,8 +63,37 @@
                 </div>
             </div>
         </div>
-        <div class="project-section">
+        <!-- <div class="swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">Slide 1</div>
+                <div class="swiper-slide">Slide 2</div>
+                <div class="swiper-slide">Slide 3</div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div> -->
+        <div id="project-gallery" class="project-section">
             <h3>Screenshots</h3>
+            <div class="gallery-project_container swiper">
+                <ul class="swiper-wrapper">
+                    <li class="gallery-project_card swiper-slide">
+                        <img src="assets/img_sample.png" alt="">
+                        <p>Discussion Grount</p>
+                    </li>
+                    <li class="gallery-project_card swiper-slide">
+                        <img src="assets/img_sample.png" alt="">
+                        <p>Discussion Grount</p>
+                    </li>
+                    <li class="gallery-project_card swiper-slide">
+                        <img src="assets/img_sample.png" alt="">
+                        <p>Discussion Grount</p>
+                    </li>
+                </ul>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
         </div>
         <div class="project-section tech-used_section">
             <h3>Technologies Used</h3>
@@ -73,5 +104,7 @@
                 </div>
             </div>
         </div>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+        <script src="script.js"></script>
     </body>
 </html>
