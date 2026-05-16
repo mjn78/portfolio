@@ -61,6 +61,30 @@
   height: 100px;
   background: #ccc;
 }
+.tech-used_section {
+    background: #F5F6F7;
+}
+.tech-used {
+    padding: 0px 50px;
+}
+.tech-used_container {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    background: #fff;
+    padding: 0 20px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+    width: fit-content;
+    border-radius: 5px;
+}
+.tech-used_container img{
+    height: 100%;
+    width: 30px;
+    user-select: none;
+}
+.tech-used_container p {
+    user-select: none;
+}
 
 
 /* Tablet */
@@ -87,5 +111,11 @@
     }
     .features-card p{
         text-align: center;
+    }
+    .tech-used_container {
+        padding: 10px;
+    }
+    .tech-used_container p{
+        display: none;
     }
 }
